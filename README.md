@@ -1,6 +1,5 @@
 ### 📄 `README.md`
 
-````markdown
 # 🤖 Steem Witness Telegram Bot
 
 A Python-based Telegram bot that monitors missed blocks by selected Steem witnesses and provides real-time updates via Telegram. It also supports fetching witness stats like rank, produced/missed blocks, and last confirmed block.
@@ -26,7 +25,7 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 2. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
-````
+
 
 3. **Configure the bot**:
 
