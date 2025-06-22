@@ -8,7 +8,7 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 
 - Sends live alerts when a watched witness misses a block
 - `/ping` command to check if the bot is running
-- `/info` command to get current stats of `dhaka.witness`
+- `/info` command to get current stats of `Your Witness id`
 - Clean, readable timestamps (12-hour format with AM/PM)
 - Runs continuously via Docker or on VPS
 - Minimal resource usage
@@ -29,7 +29,7 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 
 3. **Configure the bot**:
 
-   * Edit `steem_bot.py` and replace:
+   * Edit `bot.py` and replace:
 
      * `BOT_TOKEN` with your Telegram bot token
      * `USER_ID` with your Telegram user ID
@@ -37,7 +37,7 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 4. **Run the bot**:
 
    ```bash
-   python steem_bot.py
+   python bot.py
    ```
 
 ---
@@ -47,13 +47,13 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 1. **Build the image**:
 
    ```bash
-   docker build -t steem-witness-bot .
+   docker build -t <your-bot-name> .
    ```
 
 2. **Run the container**:
 
    ```bash
-   docker run -d --restart unless-stopped --name steem-bot steem-witness-bot
+   docker run -d --restart unless-stopped --name <your-bot-name> <your-bot-name>
    ```
 
 3. **View logs**:
@@ -67,15 +67,8 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 ## 💬 Telegram Commands
 
 * `/ping` – Check if the bot is alive
-* `/info` – Get stats for `dhaka.witness`
+* `/info` – Get stats for `Your Witness`
 
----
-
-## 🔒 Security Note
-
-This bot uses a public Docker image (`python:3.10-slim`) which may have vulnerabilities flagged by scanners. If you're security-conscious, use `python:3.10-alpine` or scan with [Trivy](https://github.com/aquasecurity/trivy).
-
----
 
 ## 📄 License
 
