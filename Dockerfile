@@ -1,5 +1,7 @@
-# Use Python image
-FROM python:3.10-slim
+FROM python:3.10-alpine
+
+# Install system dependencies required for building some Python packages
+RUN apk add --no-cache gcc musl-dev libffi-dev
 
 # Set working directory
 WORKDIR /app
@@ -8,7 +10,7 @@ WORKDIR /app
 COPY requirements.txt .
 COPY steem_bot.py .
 
-# Install dependencies
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Run the bot
