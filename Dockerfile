@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copy files
 COPY requirements.txt .
-COPY steem_bot.py .
+COPY bot.py .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
