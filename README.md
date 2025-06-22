@@ -56,11 +56,6 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
    docker run -d --restart unless-stopped --name <your-bot-name> <your-bot-name>
    ```
 
-3. **View logs**:
-
-   ```bash
-   docker logs -f steem-bot
-   ```
 
 ---
 
