@@ -4,7 +4,7 @@
 
 A Python-based Telegram bot that monitors missed blocks by selected Steem witnesses and provides real-time updates via Telegram. It also supports fetching witness stats like rank, produced/missed blocks, and last confirmed block.
 
-## 🚀 Features
+## Features
 
 - Sends live alerts when a watched witness misses a block
 - `/ping` command to check if the bot is running
@@ -13,13 +13,13 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 - Runs continuously via Docker or on VPS
 - Minimal resource usage
 
-## 📦 Requirements
+##  Requirements
 
 - Python 3.10+
 - Telegram Bot Token
 - Docker (optional, but recommended for deployment)
 
-## 🛠 Setup (Local or VPS)
+## Setup (Local or VPS)
 
 1. **Clone this repo** or upload the files to your server
 2. **Install dependencies**:
@@ -42,7 +42,7 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 
 ---
 
-## 🐳 Run with Docker
+##  Run with Docker
 
 1. **Build the image**:
 
@@ -59,13 +59,13 @@ A Python-based Telegram bot that monitors missed blocks by selected Steem witnes
 
 ---
 
-## 💬 Telegram Commands
+## Telegram Commands
 
 * `/ping` – Check if the bot is alive
 * `/info` – Get stats for `Your Witness`
 
 
-## 📄 License
+## License
 
 MIT License – do whatever you want, just don’t break the Steem blockchain. 😉
 
